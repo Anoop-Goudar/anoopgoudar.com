@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0px;
   background-color: black;
@@ -10,7 +14,7 @@ body a {
   body a:hover {
     color: yellow;
 }
-@media all and (min-width: 1222px) {
+@media (min-width: 1222px) {
   .content h1 {
     font-size: 100px;
   }
@@ -28,7 +32,7 @@ body a {
     width: 45%;
   }
 }
-@media all and (max-width: 1221px) and (min-width: 877px) {
+@media (max-width: 1221px) and (min-width: 877px) {
   .content h1 {
     font-size: 80px;
   }
@@ -46,7 +50,18 @@ body a {
     float: right;
   }
 }
-@media all and (max-width: 876px) and (min-width: 439px) {
+/*@media (max-width: 876px) and (min-width: 439px) {
+  body {
+    color: green;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+}*/
+@media (max-width: 876px) {
+  /*body {
+    color: red;
+  }*/
   .content h1 {
     font-size: 40px;
   }
@@ -62,11 +77,14 @@ body a {
     width: 100%;
   }
 }
-@media all and (max-width: 438px) {
+/*@media (max-width: 438px) {
+  body {
+    color: blue;
+  }
   .content h1 {
     font-size: 28px;
   }
-}
+}*/
 .content h1 {
   margin: 0%;
   font-weight: normal;
@@ -87,4 +105,11 @@ img {
 .subcontent p {
     font-size: 17px;
     margin: 2%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
